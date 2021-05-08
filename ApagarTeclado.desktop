@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=bash ApagarTeclado.sh
+Path=/Proyectos/ApagarTeclado/ApagarTecladoLinux
+NoDisplay=false
+Name=ApagarTeclado
+Comment=ApagaTeclado
+StartupNotify=false
+Icon=/Proyectos/ApagarTeclado/ApagarTecladoLinux/keyboard.png
