@@ -1,6 +1,6 @@
 #!/bin/bash
-Icon="/Documentos/Teclado/ApagarTecladoLinux/keyBoard-on.png"
-Icoff="/Documentos/Teclado/ApagarTecladoLinux/keyBoard-off.png"
+Icon="/home/sala/Documentos/Teclado/ApagarTecladoLinux/keyBoard-on.png"
+Icoff="/home/sala/Documentos/Teclado/ApagarTecladoLinux/keyBoard-off.png"
 fconfig=".keyboard" 
 id=7
 master=3
@@ -17,12 +17,12 @@ fi
 
 if [ $var = "disabled" ];
     then
-        notify-send -i $Icon "Enabling keyboard..." \ "ON - Keyboard connected !";
+        notify-send -i $Icon "Habilitando Teclado..." \ "ON - Teclado Conectado!";
         echo "enable keyboard..."
         xinput reattach $id $master
         echo "enabled" > $fconfig
     elif [ $var = "enabled" ]; then
-        notify-send -i $Icoff "Disabling Keyboard" \ "OFF - Keyboard disconnected";
+        notify-send -i $Icoff "Deshabilitando Teclado.." \ "OFF - Teclado Desconectado";
         echo "disable keyboard"
         xinput float $id
         echo 'disabled' > $fconfig
